@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:orientation="vertical">
+    <ImageButton
+        android:background="@android:color/transparent"
+        android:layout_gravity="right"
+        android:id="@+id/showAddContact"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:onClick="showAddContact"
+        android:scaleType="centerCrop"
+        android:src="@drawable/plus" />
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="10sp"
+    android:id="@+id/frame">
+
+
+    <EditText
+        android:id="@+id/edt_name"
+        android:layout_margin="10sp"
+        android:hint="Nhập tên"
+        android:text="a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/edt_number"
+        android:layout_margin="10sp"
+        android:text="a"
+        android:hint="Nhập số điện thoại"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/txtSexua"
+        android:textSize="20sp"
+        android:textColor="#0f0a4b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Giới tính"
+        android:paddingLeft="30sp"
+        android:layout_marginVertical="10sp"/>
+    <RadioGroup
+
+        android:layout_marginHorizontal="70sp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:checked="true"
+            android:id="@+id/rbtn_male"
+            android:text="Nam"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/rbtn_female"
+            android:text="Nữ"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+  <!--  <EditText
+        android:textAlignment="center"
+        android:hint="Thông tin thêm"
+        android:layout_margin="30sp"
+        android:id="@+id/edt_more_inf"
+        android:layout_width="match_parent"
+        android:layout_height="150sp"
+        android:padding="10sp"
+        android:ems="10"
+        android:inputType="textMultiLine" />-->
+
+    <Button
+        android:onClick="addContact"
+        android:id="@+id/btn_add_contact"
+        android:layout_gravity="center"
+        android:text="Lưu"
+        android:textColor="#040d20"
+        android:background="#82d1a9"
+        android:layout_width="200sp"
+        android:layout_height="50sp" />
+</LinearLayout>
+    <ListView
+        android:id="@+id/lv_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></ListView>
+
+
+</LinearLayout>
